@@ -29,3 +29,25 @@ Já a expressão (*p).dia irá acessar o "dia" do apontado por p*, e assim retor
 R.: LER O LIVRO
 */
 //5-)
+#include <stdio.h>
+
+struct data{
+  int dia;
+  int mes;
+  int ano;
+};
+
+int main(void) {
+  int valor;
+  struct data idade;
+  printf("Digite sua idade: ");
+  scanf("%d", &valor);
+  idade.mes = valor*12;
+  idade.dia = valor*365;
+  printf("Você possui %d anos\n", valor);
+  printf("Você possui %d meses\n", idade.mes);
+  printf("Você possui %d dias\n", idade.dia);
+  return 0;
+}
+
+//6-)
